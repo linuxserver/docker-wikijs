@@ -1,0 +1,66 @@
+---
+
+# project information
+project_name: wikijs
+project_url: "https://github.com/Requarks/wiki"
+project_logo: "https://static.requarks.io/logo/wikijs-full.svg"
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) A modern, lightweight and powerful wiki app built on NodeJS."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+
+project_blurb_optional_extras_enabled: false
+project_blurb_optional_extras: []
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
+
+# development version
+development_versions: false
+development_versions_items:
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+
+param_usage_include_net: false
+
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
+
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Where local Wiki.js data is stored." }
+
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3000", internal_port: "3000", port_desc: "Port for Wiki.js's web interface." }
+
+# optional container parameters
+opt_param_usage_include_env: false
+opt_param_env_vars:
+
+opt_param_usage_include_vols: false
+opt_param_volumes:
+
+opt_param_usage_include_ports: false
+opt_param_ports:
+
+opt_param_device_map: false
+opt_param_devices:
+
+opt_cap_add_param: false
+opt_cap_add_param_vars:
+
+optional_block_1: false
+optional_block_1_items: ""
+
+# application setup block
+app_setup_block_enabled: false
+app_setup_block: ""
+
+# changelog
+changelogs:
+  - { date: "14.12.19:", desc: "Initial Release." }
