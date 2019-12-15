@@ -32,7 +32,8 @@ param_env_vars:
 
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "<path to data>", desc: "Where local Wiki.js data is stored." }
+  - { vol_path: "/config", vol_host_path: "<path to config>", desc: "Where Wiki.js config is stored." }
+  - { vol_path: "/data", vol_host_path: "<path to data>", desc: "Where Wiki.js data is stored." }
 
 param_usage_include_ports: true
 param_ports:

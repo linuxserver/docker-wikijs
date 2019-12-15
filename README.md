@@ -68,7 +68,8 @@ docker create \
   -e PGID=1000 \
   -e TZ=Europe/London \
   -p 3000:3000 \
-  -v <path to data>:/config \
+  -v <path to config>:/config \
+  -v <path to data>:/data \
   --restart unless-stopped \
   linuxserver/wikijs
 ```
@@ -90,7 +91,8 @@ services:
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - <path to data>:/config
+      - <path to config>:/config
+      - <path to data>:/data
     ports:
       - 3000:3000
     restart: unless-stopped
@@ -106,7 +108,8 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
-| `-v /config` | Where local Wiki.js data is stored. |
+| `-v /config` | Where Wiki.js config is stored. |
+| `-v /data` | Where Wiki.js data is stored. |
 
 ## Environment variables from files (Docker secrets)
 
