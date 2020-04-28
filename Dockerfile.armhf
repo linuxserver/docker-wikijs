@@ -21,6 +21,8 @@ RUN \
    g++ \
    make \
    python3 && \
+ echo "**** symlink python3 for compatibility ****" && \
+ ln -s /usr/bin/python3 /usr/bin/python && \
  echo "**** install wiki.js ****" && \
  mkdir -p /app/wiki && \
  if [ -z ${WIKIJS_RELEASE} ]; then \
@@ -38,6 +40,7 @@ RUN \
  npm run build && \
  npm prune --production && \
  echo "**** cleanup ****" && \
+ rm /usr/bin/python && \
  apk del --purge \
   build-dependencies && \
  rm -rf \
