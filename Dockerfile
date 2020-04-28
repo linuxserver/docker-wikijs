@@ -18,6 +18,7 @@ RUN \
    npm && \
  apk add --no-cache --virtual=build-dependencies \
    curl \
+   g++ \
    make \
    python3 && \
  echo "**** install wiki.js ****" && \
@@ -28,20 +29,20 @@ RUN \
  fi && \
  curl -o \
  /tmp/wiki.tar.gz -L \
-	"https://github.com/Requarks/wiki/archive/${WIKIJS_RELEASE}.tar.gz" && \
+	 "https://github.com/Requarks/wiki/archive/${WIKIJS_RELEASE}.tar.gz" && \
  tar xf \
  /tmp/wiki.tar.gz -C \
-	/app/wiki/ --strip-components=1 && \
+	 /app/wiki/ --strip-components=1 && \
  cd /app/wiki && \
  npm i --no-dev && \
  npm run build && \
  npm prune --production && \
  echo "**** cleanup ****" && \
  apk del --purge \
-   build-dependencies && \
+  build-dependencies && \
  rm -rf \
-    /root/.cache \
-    /tmp/*
+   /root/.cache \
+   /tmp/*
 
 # copy local files
 COPY root/ /
