@@ -14,11 +14,11 @@ RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache \
    git \
-   make \
    nodejs \
    npm && \
  apk add --no-cache --virtual=build-dependencies \
    curl \
+   make \
    python3 && \
  echo "**** install wiki.js ****" && \
  mkdir -p /app/wiki && \
