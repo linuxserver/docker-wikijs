@@ -16,7 +16,8 @@ RUN \
     nodejs \
     npm && \
  apk add --no-cache --virtual=build-dependencies \
-    curl && \
+    curl \
+    python3 && \
  echo "**** install wiki.js ****" && \
  mkdir -p /app/wiki && \
  if [ -z ${WIKIJS_RELEASE} ]; then \
@@ -32,6 +33,7 @@ RUN \
  cd /app/wiki && \
  npm i --no-dev && \
  npm run build && \
+ npm prune --production && \
  echo "**** cleanup ****" && \
  apk del --purge \
     build-dependencies && \
