@@ -64,5 +64,5 @@ app_setup_block: ""
 
 # changelog
 changelogs:
-  - { date: "14.12.19:", desc: "Initial Release." }
   - { date: "28.04.20:", desc: "Added python dependency for some NPM modules as well as git for storage module" }
+  - { date: "14.12.19:", desc: "Initial Release." }
