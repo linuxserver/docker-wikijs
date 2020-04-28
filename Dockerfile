@@ -13,11 +13,13 @@ ENV HOME="/app"
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache \
-    nodejs \
-    npm && \
+   git \
+   make \
+   nodejs \
+   npm && \
  apk add --no-cache --virtual=build-dependencies \
-    curl \
-    python3 && \
+   curl \
+   python3 && \
  echo "**** install wiki.js ****" && \
  mkdir -p /app/wiki && \
  if [ -z ${WIKIJS_RELEASE} ]; then \
@@ -36,7 +38,7 @@ RUN \
  npm prune --production && \
  echo "**** cleanup ****" && \
  apk del --purge \
-    build-dependencies && \
+   build-dependencies && \
  rm -rf \
     /root/.cache \
     /tmp/*
