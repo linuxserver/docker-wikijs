@@ -13,10 +13,16 @@ ENV HOME="/app"
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache \
-    nodejs \
-    npm && \
+   git \
+   nodejs \
+   npm && \
  apk add --no-cache --virtual=build-dependencies \
-    curl && \
+   curl \
+   g++ \
+   make \
+   python3 && \
+ echo "**** symlink python3 for compatibility ****" && \
+ ln -s /usr/bin/python3 /usr/bin/python && \
  echo "**** install wiki.js ****" && \
  mkdir -p /app/wiki && \
  if [ -z ${WIKIJS_RELEASE} ]; then \
@@ -25,19 +31,21 @@ RUN \
  fi && \
  curl -o \
  /tmp/wiki.tar.gz -L \
-	"https://github.com/Requarks/wiki/archive/${WIKIJS_RELEASE}.tar.gz" && \
+	 "https://github.com/Requarks/wiki/archive/${WIKIJS_RELEASE}.tar.gz" && \
  tar xf \
  /tmp/wiki.tar.gz -C \
-	/app/wiki/ --strip-components=1 && \
+	 /app/wiki/ --strip-components=1 && \
  cd /app/wiki && \
  npm i --no-dev && \
  npm run build && \
+ npm prune --production && \
  echo "**** cleanup ****" && \
+ rm /usr/bin/python && \
  apk del --purge \
-    build-dependencies && \
+  build-dependencies && \
  rm -rf \
-    /root/.cache \
-    /tmp/*
+   /root/.cache \
+   /tmp/*
 
 # copy local files
 COPY root/ /
