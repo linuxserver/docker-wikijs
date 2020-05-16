@@ -18,7 +18,8 @@ RUN \
    git \
    nodejs \
    npm \
-   openssh && \
+   openssh \
+   python3 && \
  apk add --no-cache --virtual=build-dependencies \
    curl && \
  echo "**** symlink python3 for compatibility ****" && \
@@ -49,4 +50,3 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 3000
-
