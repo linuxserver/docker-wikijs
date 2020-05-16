@@ -18,10 +18,12 @@ RUN \
    git \
    nodejs \
    npm \
-   openssh \
-   python3 && \
+   openssh && \
  apk add --no-cache --virtual=build-dependencies \
-   curl && \
+   curl \
+   g++ \
+   make \
+   python3 && \
  echo "**** symlink python3 for compatibility ****" && \
  ln -s /usr/bin/python3 /usr/bin/python && \
  echo "**** install wiki.js ****" && \
