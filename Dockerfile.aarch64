@@ -9,13 +9,16 @@ LABEL maintainer="alex-phillips"
 
 # environment settings
 ENV HOME="/app"
+ENV NODE_ENV="production"
 
 RUN \
  echo "**** install build packages ****" && \
  apk add --no-cache \
+   alpine-base \
    git \
    nodejs \
-   npm && \
+   npm \
+   openssh && \
  apk add --no-cache --virtual=build-dependencies \
    curl \
    g++ \
@@ -30,19 +33,16 @@ RUN \
 	| awk '/tag_name/{print $4;exit}' FS='[""]'); \
  fi && \
  curl -o \
- /tmp/wiki.tar.gz -L \
-	 "https://github.com/Requarks/wiki/archive/${WIKIJS_RELEASE}.tar.gz" && \
+   /tmp/wiki.tar.gz -L \
+	 "https://github.com/Requarks/wiki/releases/download/${WIKIJS_RELEASE}/wiki-js.tar.gz" && \
  tar xf \
- /tmp/wiki.tar.gz -C \
-	 /app/wiki/ --strip-components=1 && \
+   /tmp/wiki.tar.gz -C \
+	 /app/wiki/ && \
  cd /app/wiki && \
- npm i --no-dev && \
- npm run build && \
- npm prune --production && \
+ npm rebuild sqlite3 && \
  echo "**** cleanup ****" && \
- rm /usr/bin/python && \
  apk del --purge \
-  build-dependencies && \
+   build-dependencies && \
  rm -rf \
    /root/.cache \
    /tmp/*

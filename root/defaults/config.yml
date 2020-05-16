@@ -21,16 +21,30 @@ port: 3000
 # - sqlite = SQLite 3.9 or later
 
 db:
-  type: sqlite
+  type: {{DB_TYPE}}
+
   # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
-  host: localhost
-  port: 5432
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
+  host: {{DB_HOST}}
+  port: {{DB_PORT}}
+  user: {{DB_USER}}
+  pass: {{DB_PASS}}
+  db: {{DB_NAME}}
   ssl: false
+
+  # Optional - PostgreSQL / MySQL / MariaDB only:
+  # -> Uncomment lines you need below and set `auto` to false
+  # -> Full list of accepted options: https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options
+  sslOptions:
+    auto: true
+    # rejectUnauthorized: false
+    # ca: path/to/ca.crt
+    # cert: path/to/cert.crt
+    # key: path/to/key.pem
+    # pfx: path/to/cert.pfx
+    # passphrase: xyz123
+
   # SQLite only:
-  storage: /data/db.sqlite
+  storage: {{DB_FILEPATH}}
 
 #######################################################################
 # ADVANCED OPTIONS                                                    #
@@ -45,7 +59,12 @@ db:
 
 ssl:
   enabled: false
+  port: 3443
 
+  # Provider to use, possible values: custom, letsencrypt
+  provider: custom
+
+  # ++++++ For custom only ++++++
   # Certificate format, either 'pem' or 'pfx':
   format: pem
   # Using PEM format:
@@ -59,9 +78,9 @@ ssl:
   # to 1024 bits (default: null):
   dhparam: null
 
-  # Listen on this HTTP port and redirect all requests to HTTPS.
-  # Set to false to disable (default: 80):
-  redirectNonSSLPort: 80
+  # ++++++ For letsencrypt only ++++++
+  domain: wiki.yourdomain.com
+  subscriberEmail: admin@example.com
 
 # ---------------------------------------------------------------------
 # Database Pool Options
@@ -95,7 +114,7 @@ logLevel: info
 uploads:
   # Maximum upload size in bytes per file (default: 5242880 (5 MB))
   maxFileSize: 5242880
-  # Maximum file uploads per request (default: 20)
+  # Maximum file uploads per request (default: 10)
   maxFiles: 10
 
 # ---------------------------------------------------------------------
@@ -107,7 +126,17 @@ uploads:
 offline: false
 
 # ---------------------------------------------------------------------
+# High-Availability
+# ---------------------------------------------------------------------
+# Set to true if you have multiple concurrent instances running off the
+# same DB (e.g. Kubernetes pods / load balanced instances). Leave false
+# otherwise. You MUST be using PostgreSQL to use this feature.
+
+ha: false
+
+# ---------------------------------------------------------------------
 # Data Path
 # ---------------------------------------------------------------------
-# Writeable data path for Wiki.js, mainly for cache and user uploads.
+# Writeable data path used for cache and temporary user uploads.
 dataPath: /data
+

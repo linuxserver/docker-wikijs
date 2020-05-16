@@ -1,0 +1,33 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p /data
+
+DB_TYPE=${DB_TYPE:-sqlite}
+DB_HOST=${DB_HOST:-mariadb}
+DB_PORT=${DB_PORT:-3306}
+DB_USER=${DB_USER:-root}
+DB_PASS=${DB_PASS:-root}
+DB_NAME=${DB_NAME:-wikijs}
+DB_FILEPATH=${DB_FILEPATH:-/config/db.sqlite}
+
+if [ ! -f "/config/config.yml" ]; then
+    cp /defaults/config.yml /config/config.yml
+
+    sed -i "s|{{DB_TYPE}}|"${DB_TYPE}"|g" /config/config.yml
+    sed -i "s|{{DB_HOST}}|"${DB_HOST}"|g" /config/config.yml
+    sed -i "s|{{DB_PORT}}|"${DB_PORT}"|g" /config/config.yml
+    sed -i "s|{{DB_USER}}|"${DB_USER}"|g" /config/config.yml
+    sed -i "s|{{DB_PASS}}|"${DB_PASS}"|g" /config/config.yml
+    sed -i "s|{{DB_NAME}}|"${DB_NAME}"|g" /config/config.yml
+    sed -i "s|{{DB_FILEPATH}}|"${DB_FILEPATH}"|g" /config/config.yml
+fi
+
+ln -sf /config/config.yml /app/wiki/config.yml
+
+# permissions
+chown -R abc:abc \
+	/config
+
+# chown the app directory, but not node_modules
+find /app/wiki -maxdepth 1 ! -name node_modules ! -name wiki -exec chown -R abc:abc '{}' \;
+
