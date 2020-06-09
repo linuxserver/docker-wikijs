@@ -8,8 +8,8 @@ busybox-1.31.1-r9
 busybox-initscripts-3.2-r2
 busybox-suid-1.31.1-r9
 c-ares-1.15.0-r0
-ca-certificates-20191127-r1
-ca-certificates-cacert-20191127-r1
+ca-certificates-20191127-r2
+ca-certificates-cacert-20191127-r2
 coreutils-8.31-r0
 expat-2.2.9-r1
 git-2.24.3-r0
@@ -20,6 +20,8 @@ libcrypto1.1-1.1.1g-r0
 libcurl-7.67.0-r0
 libedit-20191211.3.1-r0
 libgcc-9.2.0-r4
+libintl-0.20.1-r2
+libproc-3.3.16-r0
 libssl1.1-1.1.1g-r0
 libstdc++-9.2.0-r4
 libtls-standalone-2.9.1-r0
@@ -40,6 +42,7 @@ openssh-server-8.1_p1-r0
 openssh-server-common-8.1_p1-r0
 openssh-sftp-server-8.1_p1-r0
 pcre2-10.34-r1
+procps-3.3.16-r0
 readline-8.0.1-r0
 scanelf-1.2.4-r0
 shadow-4.7-r1
