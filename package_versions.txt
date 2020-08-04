@@ -33,8 +33,8 @@ musl-utils-1.1.24-r9
 ncurses-libs-6.2_p20200523-r0
 ncurses-terminfo-base-6.2_p20200523-r0
 nghttp2-libs-1.41.0-r0
-nodejs-12.17.0-r0
-npm-12.17.0-r0
+nodejs-12.18.3-r0
+npm-12.18.3-r0
 openrc-0.42.1-r10
 openssh-8.3_p1-r0
 openssh-client-8.3_p1-r0
