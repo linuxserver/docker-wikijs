@@ -4,7 +4,7 @@ alpine-conf-3.9.0-r1
 alpine-keys-2.2-r0
 apk-tools-2.10.5-r1
 bash-5.0.17-r0
-brotli-libs-1.0.7-r5
+brotli-libs-1.0.9-r1
 busybox-1.31.1-r19
 busybox-initscripts-3.2-r2
 busybox-suid-1.31.1-r19
