@@ -27,6 +27,8 @@ ln -sf /config/config.yml /app/wiki/config.yml
 # permissions
 chown -R abc:abc \
 	/config
+chown -R abc:abc \
+	/data
 
 # chown the app directory, but not node_modules
 find /app/wiki -maxdepth 1 ! -name node_modules ! -name wiki -exec chown -R abc:abc '{}' \;
