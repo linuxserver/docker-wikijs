@@ -1,4 +1,4 @@
-alpine-base-3.12.2-r0
+alpine-base-3.12.3-r0
 alpine-baselayout-3.2.0-r7
 alpine-conf-3.9.0-r1
 alpine-keys-2.2-r0
@@ -36,12 +36,12 @@ nghttp2-libs-1.41.0-r0
 nodejs-12.18.4-r0
 npm-12.18.4-r0
 openrc-0.42.1-r11
-openssh-8.3_p1-r0
-openssh-client-8.3_p1-r0
-openssh-keygen-8.3_p1-r0
-openssh-server-8.3_p1-r0
-openssh-server-common-8.3_p1-r0
-openssh-sftp-server-8.3_p1-r0
+openssh-8.3_p1-r1
+openssh-client-8.3_p1-r1
+openssh-keygen-8.3_p1-r1
+openssh-server-8.3_p1-r1
+openssh-server-common-8.3_p1-r1
+openssh-sftp-server-8.3_p1-r1
 pcre2-10.35-r0
 procps-3.3.16-r0
 readline-8.0.4-r0
