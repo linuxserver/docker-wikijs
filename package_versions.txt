@@ -1,13 +1,13 @@
-alpine-base-3.13.4-r0
+alpine-base-3.13.5-r0
 alpine-baselayout-3.2.0-r8
 alpine-conf-3.11.0-r2
 alpine-keys-2.2-r0
-apk-tools-2.12.4-r2
+apk-tools-2.12.5-r0
 bash-5.1.0-r0
 brotli-libs-1.0.9-r3
 busybox-1.32.1-r5
 busybox-initscripts-3.2-r2
-busybox-suid-1.32.1-r5
+busybox-suid-1.32.1-r6
 c-ares-1.17.1-r1
 ca-certificates-20191127-r5
 ca-certificates-bundle-20191127-r5
@@ -19,7 +19,7 @@ libacl-2.2.53-r0
 libattr-2.4.48-r0
 libc-utils-0.7.2-r3
 libcrypto1.1-1.1.1k-r0
-libcurl-7.74.0-r1
+libcurl-7.76.1-r0
 libedit-20191231.3.1-r1
 libgcc-10.2.1_pre1-r3
 libintl-0.20.2-r2
@@ -33,8 +33,8 @@ musl-utils-1.2.2-r0
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
 nghttp2-libs-1.42.0-r1
-nodejs-14.16.1-r0
-npm-14.16.1-r0
+nodejs-14.16.1-r1
+npm-14.16.1-r1
 openrc-0.42.1-r19
 openssh-8.4_p1-r3
 openssh-client-8.4_p1-r3
