@@ -40,6 +40,7 @@ Find us at:
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fwikijs%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/wikijs/latest/index.html)
 
 [Wikijs](https://github.com/Requarks/wiki) A modern, lightweight and powerful wiki app built on NodeJS.
+
 [![wikijs](https://static.requarks.io/logo/wikijs-full.svg)](https://github.com/Requarks/wiki)
 
 ## Supported Architectures
