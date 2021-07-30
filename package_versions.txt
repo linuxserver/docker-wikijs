@@ -19,7 +19,7 @@ libacl-2.2.53-r0
 libattr-2.4.48-r0
 libc-utils-0.7.2-r3
 libcrypto1.1-1.1.1k-r0
-libcurl-7.77.0-r1
+libcurl-7.78.0-r0
 libedit-20191231.3.1-r1
 libgcc-10.2.1_pre1-r3
 libintl-0.20.2-r2
@@ -33,8 +33,8 @@ musl-utils-1.2.2-r1
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
 nghttp2-libs-1.42.0-r1
-nodejs-14.16.1-r1
-npm-14.16.1-r1
+nodejs-14.17.4-r0
+npm-14.17.4-r0
 openrc-0.42.1-r20
 openssh-8.4_p1-r3
 openssh-client-8.4_p1-r3
