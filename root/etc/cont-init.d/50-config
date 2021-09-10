@@ -1,5 +1,11 @@
 #!/usr/bin/with-contenv bash
 
+if [ -d /app/wiki-tmp ]; then
+    echo "New container detected. Setting up app folder and fixing permissions."
+    mv /app/wiki-tmp /app/wiki
+    chown -R abc:abc /app
+fi
+
 mkdir -p /data
 
 DB_TYPE=${DB_TYPE:-sqlite}
@@ -29,7 +35,3 @@ chown -R abc:abc \
 	/config
 chown abc:abc \
 	/data
-
-# chown the app directory, but not node_modules
-find /app/wiki -maxdepth 1 ! -name node_modules ! -name wiki -exec chown -R abc:abc '{}' \;
-
