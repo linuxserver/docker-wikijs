@@ -41,7 +41,7 @@ RUN \
   cd /app/wiki && \
   npm rebuild sqlite3 && \
   echo "**** overlay-fs bug workaround ****" && \
-  mv /app /app-tmp && \
+  mv /app/wiki /app/wiki-tmp && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
