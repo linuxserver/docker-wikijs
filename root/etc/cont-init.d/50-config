@@ -35,6 +35,3 @@ chown -R abc:abc \
 	/config
 chown abc:abc \
 	/data
-
-# chown the app directory, but not node_modules
-find /app/wiki -maxdepth 1 ! -name node_modules ! -name wiki -exec chown -R abc:abc '{}' \;
