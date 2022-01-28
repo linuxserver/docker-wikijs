@@ -9,8 +9,8 @@ busybox-1.32.1-r7
 busybox-initscripts-3.2-r2
 busybox-suid-1.32.1-r7
 c-ares-1.17.2-r0
-ca-certificates-20191127-r5
-ca-certificates-bundle-20191127-r5
+ca-certificates-20211220-r0
+ca-certificates-bundle-20211220-r0
 coreutils-8.32-r2
 expat-2.2.10-r2
 git-2.30.2-r0
