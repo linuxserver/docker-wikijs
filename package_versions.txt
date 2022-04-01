@@ -1,4 +1,4 @@
-alpine-base-3.13.8-r0
+alpine-base-3.13.9-r0
 alpine-baselayout-3.2.0-r8
 alpine-conf-3.11.0-r2
 alpine-keys-2.4-r0
@@ -35,7 +35,7 @@ ncurses-terminfo-base-6.2_p20210109-r0
 nghttp2-libs-1.42.0-r1
 nodejs-14.19.0-r0
 npm-14.19.0-r0
-openrc-0.42.1-r20
+openrc-0.42.1-r21
 openssh-8.4_p1-r4
 openssh-client-8.4_p1-r4
 openssh-keygen-8.4_p1-r4
@@ -55,4 +55,4 @@ utmps-0.1.0.0-r0
 utmps-openrc-0.1.0.0-r0
 xz-5.2.5-r0
 xz-libs-5.2.5-r0
-zlib-1.2.11-r3
+zlib-1.2.12-r0
