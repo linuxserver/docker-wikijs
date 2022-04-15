@@ -13,7 +13,7 @@ ca-certificates-20211220-r0
 ca-certificates-bundle-20211220-r0
 coreutils-8.32-r2
 expat-2.2.10-r6
-git-2.30.2-r0
+git-2.30.3-r0
 ifupdown-ng-0.11.2-r0
 libacl-2.2.53-r0
 libattr-2.4.48-r0
@@ -53,6 +53,6 @@ ssl_client-1.32.1-r8
 tzdata-2022a-r0
 utmps-0.1.0.0-r0
 utmps-openrc-0.1.0.0-r0
-xz-5.2.5-r0
-xz-libs-5.2.5-r0
+xz-5.2.5-r1
+xz-libs-5.2.5-r1
 zlib-1.2.12-r0
