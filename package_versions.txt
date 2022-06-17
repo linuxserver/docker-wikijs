@@ -42,7 +42,7 @@ openssh-keygen-8.4_p1-r4
 openssh-server-8.4_p1-r4
 openssh-server-common-8.4_p1-r4
 openssh-sftp-server-8.4_p1-r4
-pcre2-10.36-r0
+pcre2-10.36-r1
 procps-3.3.16-r0
 readline-8.1.0-r0
 s6-ipcserver-2.10.0.0-r0
