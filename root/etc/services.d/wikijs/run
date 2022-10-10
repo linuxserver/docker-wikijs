@@ -1,6 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-cd /app/wiki || exit
-
-exec \
-	s6-setuidgid abc /usr/bin/node server
