@@ -44,7 +44,7 @@ db:
     # passphrase: xyz123
 
   # SQLite only:
-  storage: {{DB_FILEPATH}}
+  storage: /config/db.sqlite
 
 #######################################################################
 # ADVANCED OPTIONS                                                    #
@@ -139,4 +139,3 @@ ha: false
 # ---------------------------------------------------------------------
 # Writeable data path used for cache and temporary user uploads.
 dataPath: /data
-

@@ -58,6 +58,12 @@ The architectures supported by this image are:
 | arm64 | ✅ | arm64v8-\<version tag\> |
 | armhf | ✅ | arm32v7-\<version tag\> |
 
+## Application Setup
+
+Please note that the database configuration environment variables will apply _on first run only_, after which you will need to directly edit /config/config.yml to change your settings.
+
+For more information please see the [official documentation](https://docs.requarks.io/).
+
 ## Usage
 
 Here are some example snippets to help you get started creating a container.
@@ -75,9 +81,15 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
+      - DB_TYPE=sqlite #optional
+      - DB_HOST= #optional
+      - DB_PORT= #optional
+      - DB_NAME= #optional
+      - DB_USER= #optional
+      - DB_PASS= #optional
     volumes:
-      - <path to config>:/config
-      - <path to data>:/data
+      - /path/to/config:/config
+      - /path/to/data:/data
     ports:
       - 3000:3000
     restart: unless-stopped
@@ -91,9 +103,15 @@ docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
+  -e DB_TYPE=sqlite `#optional` \
+  -e DB_HOST= `#optional` \
+  -e DB_PORT= `#optional` \
+  -e DB_NAME= `#optional` \
+  -e DB_USER= `#optional` \
+  -e DB_PASS= `#optional` \
   -p 3000:3000 \
-  -v <path to config>:/config \
-  -v <path to data>:/data \
+  -v /path/to/config:/config \
+  -v /path/to/data:/data \
   --restart unless-stopped \
   lscr.io/linuxserver/wikijs:latest
 
@@ -109,6 +127,12 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
+| `-e DB_TYPE=sqlite` | Set to sqlite (default) or postgres depending on the database engine you wish to use |
+| `-e DB_HOST=` | DB hostname (postgres only) |
+| `-e DB_PORT=` | DB port (postgres only) |
+| `-e DB_NAME=` | DB name (postgres only) |
+| `-e DB_USER=` | DB username (postgres only) |
+| `-e DB_PASS=` | DB password (postgres only) |
 | `-v /config` | Where Wiki.js config is stored. |
 | `-v /data` | Where Wiki.js data is stored. |
 
@@ -221,6 +245,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **05.03.23:** - Rebase to Alpine 3.17.
 * **10.10.22:** - Rebasing to alpine 3.16, migrate to s6v3.
 * **23.01.21:** - Rebasing to alpine 3.13.
 * **01.06.20:** - Rebasing to alpine 3.12.
