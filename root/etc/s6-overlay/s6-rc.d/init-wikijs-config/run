@@ -25,6 +25,7 @@ ln -sf /config/config.yml /app/wiki/config.yml
 
 # permissions
 lsiown -R abc:abc \
+    /app/wiki/data \
     /config
 lsiown abc:abc \
     /data
