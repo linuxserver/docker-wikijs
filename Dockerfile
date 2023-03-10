@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM ghcr.io/linuxserver/baseimage-alpine:3.16
 
 # set version label
@@ -13,19 +15,12 @@ ENV NODE_ENV="production"
 
 RUN \
   echo "**** install build packages ****" && \
-  apk add --no-cache \
-    alpine-base \
-    git \
-    nodejs \
-    npm \
-    openssh && \
-  apk add --no-cache --virtual=build-dependencies \
-    curl \
-    g++ \
-    make \
+  apk -U --update --no-cache add --virtual=build-dependencies \
+    build-base \
     python3 && \
-  echo "**** symlink python3 for compatibility ****" && \
-  ln -s /usr/bin/python3 /usr/bin/python && \
+  apk add --no-cache \
+    nodejs \
+    npm && \
   echo "**** install wiki.js ****" && \
   mkdir -p /app/wiki && \
   if [ -z ${WIKIJS_RELEASE} ]; then \
@@ -40,8 +35,6 @@ RUN \
     /app/wiki/ && \
   cd /app/wiki && \
   npm rebuild sqlite3 && \
-  echo "**** overlay-fs bug workaround ****" && \
-  mv /app/wiki /app/wiki-tmp && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \

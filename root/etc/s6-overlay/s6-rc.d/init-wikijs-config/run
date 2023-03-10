@@ -1,10 +1,5 @@
 #!/usr/bin/with-contenv bash
-
-if [ -d /app/wiki-tmp ]; then
-    echo "New container detected. Setting up app folder and fixing permissions."
-    mv /app/wiki-tmp /app/wiki
-    chown -R abc:abc /app
-fi
+# shellcheck shell=bash
 
 mkdir -p /data
 
@@ -14,9 +9,8 @@ DB_PORT=${DB_PORT:-3306}
 DB_USER=${DB_USER:-root}
 DB_PASS=${DB_PASS:-root}
 DB_NAME=${DB_NAME:-wikijs}
-DB_FILEPATH=${DB_FILEPATH:-/config/db.sqlite}
 
-if [ ! -f "/config/config.yml" ]; then
+if [[ ! -f "/config/config.yml" ]]; then
     cp /defaults/config.yml /config/config.yml
 
     sed -i "s|{{DB_TYPE}}|"${DB_TYPE}"|g" /config/config.yml
@@ -25,13 +19,13 @@ if [ ! -f "/config/config.yml" ]; then
     sed -i "s|{{DB_USER}}|"${DB_USER}"|g" /config/config.yml
     sed -i "s|{{DB_PASS}}|"${DB_PASS}"|g" /config/config.yml
     sed -i "s|{{DB_NAME}}|"${DB_NAME}"|g" /config/config.yml
-    sed -i "s|{{DB_FILEPATH}}|"${DB_FILEPATH}"|g" /config/config.yml
 fi
 
 ln -sf /config/config.yml /app/wiki/config.yml
 
 # permissions
-chown -R abc:abc \
+lsiown -R abc:abc \
+    /app/wiki/data \
     /config
-chown abc:abc \
+lsiown abc:abc \
     /data
