@@ -52,6 +52,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "21.03.23:", desc: "Restore git and openssh packages for git storage support." }
   - { date: "21.03.23:", desc: "Create dummy /etc/os-release to fix System Info page." }
   - { date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3." }
   - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }

@@ -19,8 +19,10 @@ RUN \
     build-base \
     python3 && \
   apk add --no-cache \
+    git \
     nodejs \
-    npm && \
+    npm \
+    openssh && \
   echo "**** install wiki.js ****" && \
   mkdir -p /app/wiki && \
   if [ -z ${WIKIJS_RELEASE} ]; then \
