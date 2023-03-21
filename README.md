@@ -245,6 +245,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **21.03.23:** - Restore git and openssh packages for git storage support.
 * **21.03.23:** - Create dummy /etc/os-release to fix System Info page.
 * **10.10.22:** - Rebasing to alpine 3.16, migrate to s6v3.
 * **23.01.21:** - Rebasing to alpine 3.13.
