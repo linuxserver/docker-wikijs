@@ -35,6 +35,8 @@ RUN \
     /app/wiki/ && \
   cd /app/wiki && \
   npm rebuild sqlite3 && \
+  echo "**** Fix system info page ****" && \
+  touch /etc/os-release && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
