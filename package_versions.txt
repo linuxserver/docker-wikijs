@@ -835,7 +835,7 @@ libacl                                              2.3.1-r0               apk
 libattr                                             2.5.1-r1               apk     
 libbsd                                              0.11.6-r2              apk     
 libc-utils                                          0.7.2-r3               apk     
-libcrypto1.1                                        1.1.1t-r1              apk     
+libcrypto1.1                                        1.1.1t-r2              apk     
 libcurl                                             7.83.1-r6              apk     
 libedit                                             20210910.3.1-r0        apk     
 libgcc                                              11.2.1_git20220219-r2  apk     
@@ -853,7 +853,7 @@ libnpmsearch                                        5.0.3                  npm
 libnpmteam                                          4.0.3                  npm     
 libnpmversion                                       3.0.4                  npm     
 libproc                                             3.3.17-r1              apk     
-libssl1.1                                           1.1.1t-r1              apk     
+libssl1.1                                           1.1.1t-r2              apk     
 libstdc++                                           11.2.1_git20220219-r2  apk     
 liftoff                                             3.1.0                  npm     
 linkify-it                                          3.0.3                  npm     
@@ -1358,7 +1358,7 @@ type-is                                             1.6.18                 npm
 typed-array-length                                  1.0.4                  npm     
 typedarray                                          0.0.6                  npm     
 typedarray-to-buffer                                3.1.5                  npm     
-tzdata                                              2023b-r1               apk     
+tzdata                                              2023c-r0               apk     
 ua-parser-js                                        0.7.34                 npm     
 uc.micro                                            1.0.6                  npm     
 uid-safe                                            2.1.5                  npm     
