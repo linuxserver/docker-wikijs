@@ -966,7 +966,7 @@ nestedtest                                          1.0.0                  npm
 netcat-openbsd                                      1.130-r3               apk     
 nghttp2-libs                                        1.47.0-r0              apk     
 no-case                                             3.0.4                  npm     
-node                                                16.20.0                binary  
+node                                                16.20.1                binary  
 node-2fa                                            1.1.2                  npm     
 node-addon-api                                      4.3.0                  npm     
 node-cache                                          5.1.2                  npm     
@@ -981,7 +981,7 @@ node-int64                                          0.4.0                  npm
 node-jose                                           2.2.0                  npm     
 node-releases                                       2.0.12                 npm     
 node-uuid                                           1.4.1                  npm     
-nodejs                                              16.20.0-r0             apk     
+nodejs                                              16.20.1-r0             apk     
 nodemailer                                          6.9.1                  npm     
 nopt                                                1.0.10                 npm     
 nopt                                                5.0.0                  npm     
