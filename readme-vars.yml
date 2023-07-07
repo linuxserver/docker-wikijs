@@ -6,56 +6,47 @@ project_url: "https://github.com/Requarks/wiki"
 project_logo: "https://static.requarks.io/logo/wikijs-full.svg"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) A modern, lightweight and powerful wiki app built on NodeJS."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 project_blurb_optional_extras_enabled: false
 project_blurb_optional_extras: []
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-
 param_usage_include_env: true
 param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
-
+  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Where Wiki.js config is stored." }
-  - { vol_path: "/data", vol_host_path: "/path/to/data", desc: "Where Wiki.js data is stored." }
-
+  - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Where Wiki.js config is stored."}
+  - {vol_path: "/data", vol_host_path: "/path/to/data", desc: "Where Wiki.js data is stored."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "3000", internal_port: "3000", port_desc: "Port for Wiki.js's web interface." }
-
+  - {external_port: "3000", internal_port: "3000", port_desc: "Port for Wiki.js's web interface."}
 # optional container parameters
 opt_param_usage_include_env: true
 opt_param_env_vars:
-  - { env_var: "DB_TYPE", env_value: "sqlite", desc: "Set to sqlite (default) or postgres depending on the database engine you wish to use" }
-  - { env_var: "DB_HOST", env_value: "", desc: "DB hostname (postgres only)" }
-  - { env_var: "DB_PORT", env_value: "", desc: "DB port (postgres only)" }
-  - { env_var: "DB_NAME", env_value: "", desc: "DB name (postgres only)" }
-  - { env_var: "DB_USER", env_value: "", desc: "DB username (postgres only)" }
-  - { env_var: "DB_PASS", env_value: "", desc: "DB password (postgres only)" }
-
+  - {env_var: "DB_TYPE", env_value: "sqlite", desc: "Set to sqlite (default) or postgres depending on the database engine you wish to use"}
+  - {env_var: "DB_HOST", env_value: "", desc: "DB hostname (postgres only)"}
+  - {env_var: "DB_PORT", env_value: "", desc: "DB port (postgres only)"}
+  - {env_var: "DB_NAME", env_value: "", desc: "DB name (postgres only)"}
+  - {env_var: "DB_USER", env_value: "", desc: "DB username (postgres only)"}
+  - {env_var: "DB_PASS", env_value: "", desc: "DB password (postgres only)"}
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   Please note that the database configuration environment variables will apply _on first run only_, after which you will need to directly edit /config/config.yml to change your settings.
 
   For more information please see the [official documentation](https://docs.requarks.io/).
-
 # changelog
 changelogs:
-  - { date: "21.03.23:", desc: "Restore git and openssh packages for git storage support." }
-  - { date: "21.03.23:", desc: "Create dummy /etc/os-release to fix System Info page." }
-  - { date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3." }
-  - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
-  - { date: "01.06.20:", desc: "Rebasing to alpine 3.12." }
-  - { date: "28.04.20:", desc: "Added python dependency for some NPM modules as well as git for storage module" }
-  - { date: "14.12.19:", desc: "Initial Release." }
+  - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
+  - {date: "21.03.23:", desc: "Restore git and openssh packages for git storage support."}
+  - {date: "21.03.23:", desc: "Create dummy /etc/os-release to fix System Info page."}
+  - {date: "10.10.22:", desc: "Rebasing to alpine 3.16, migrate to s6v3."}
+  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
+  - {date: "01.06.20:", desc: "Rebasing to alpine 3.12."}
+  - {date: "28.04.20:", desc: "Added python dependency for some NPM modules as well as git for storage module"}
+  - {date: "14.12.19:", desc: "Initial Release."}
