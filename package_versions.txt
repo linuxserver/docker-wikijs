@@ -480,7 +480,7 @@ cssom                                               0.3.8                  npm
 cssom                                               0.4.4                  npm     
 cssstyle                                            2.3.0                  npm     
 cuint                                               0.2.2                  npm     
-curl                                                8.2.0-r1               apk     
+curl                                                8.2.1-r0               apk     
 custom-error-instance                               2.1.2                  npm     
 dashdash                                            1.14.1                 npm     
 data-urls                                           2.0.0                  npm     
@@ -840,7 +840,7 @@ libattr                                             2.5.1-r1               apk
 libbsd                                              0.11.6-r2              apk     
 libc-utils                                          0.7.2-r3               apk     
 libcrypto1.1                                        1.1.1u-r2              apk     
-libcurl                                             8.2.0-r1               apk     
+libcurl                                             8.2.1-r0               apk     
 libedit                                             20210910.3.1-r0        apk     
 libgcc                                              11.2.1_git20220219-r2  apk     
 libintl                                             0.21-r2                apk     
@@ -1091,7 +1091,7 @@ path-root-regex                                     0.1.2                  npm
 path-to-regexp                                      0.1.7                  npm     
 path-type                                           4.0.0                  npm     
 pause                                               0.0.1                  npm     
-pcre2                                               10.40-r0               apk     
+pcre2                                               10.42-r0               apk     
 peek-readable                                       4.1.0                  npm     
 pem-jwk                                             2.0.0                  npm     
 performance-now                                     2.1.0                  npm     
