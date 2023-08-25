@@ -42,6 +42,7 @@ app_setup_block: |
   For more information please see the [official documentation](https://docs.requarks.io/).
 # changelog
 changelogs:
+  - {date: "25.08.22:", desc: "Rebase to Alpine 3.18."}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "21.03.23:", desc: "Restore git and openssh packages for git storage support."}
   - {date: "21.03.23:", desc: "Create dummy /etc/os-release to fix System Info page."}
