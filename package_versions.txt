@@ -884,7 +884,7 @@ libnpmpublish                                       7.1.4                   npm
 libnpmsearch                                        6.0.2                   npm   
 libnpmteam                                          5.0.3                   npm   
 libnpmversion                                       4.0.2                   npm   
-libproc2                                            4.0.3-r1                apk   
+libproc2                                            4.0.4-r0                apk   
 libssl3                                             3.1.2-r0                apk   
 libstdc++                                           12.2.1_git20220924-r10  apk   
 libunistring                                        1.1-r1                  apk   
@@ -1165,7 +1165,7 @@ prelude-ls                                          1.1.2                   npm
 proc-log                                            3.0.0                   npm   
 process                                             0.11.10                 npm   
 process-nextick-args                                2.0.1                   npm   
-procps-ng                                           4.0.3-r1                apk   
+procps-ng                                           4.0.4-r0                apk   
 promise                                             7.3.1                   npm   
 promise-all-reject-late                             1.0.1                   npm   
 promise-call-limit                                  1.0.2                   npm   
