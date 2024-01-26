@@ -20,7 +20,7 @@ param_env_vars:
   - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
-  - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Where Wiki.js config is stored."}
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
   - {vol_path: "/data", vol_host_path: "/path/to/data", desc: "Where Wiki.js data is stored."}
 param_usage_include_ports: true
 param_ports:
@@ -42,6 +42,7 @@ app_setup_block: |
   For more information please see the [official documentation](https://docs.requarks.io/).
 # changelog
 changelogs:
+  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "25.08.22:", desc: "Rebase to Alpine 3.18."}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "21.03.23:", desc: "Restore git and openssh packages for git storage support."}
