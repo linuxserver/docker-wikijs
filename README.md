@@ -86,7 +86,7 @@ services:
       - DB_USER= #optional
       - DB_PASS= #optional
     volumes:
-      - /path/to/config:/config
+      - /path/to/wikijs/config:/config
       - /path/to/data:/data
     ports:
       - 3000:3000
@@ -108,7 +108,7 @@ docker run -d \
   -e DB_USER= `#optional` \
   -e DB_PASS= `#optional` \
   -p 3000:3000 \
-  -v /path/to/config:/config \
+  -v /path/to/wikijs/config:/config \
   -v /path/to/data:/data \
   --restart unless-stopped \
   lscr.io/linuxserver/wikijs:latest
@@ -130,7 +130,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e DB_NAME=` | DB name (postgres only) |
 | `-e DB_USER=` | DB username (postgres only) |
 | `-e DB_PASS=` | DB password (postgres only) |
-| `-v /config` | Where Wiki.js config is stored. |
+| `-v /config` | Persistent config files |
 | `-v /data` | Where Wiki.js data is stored. |
 
 ## Environment variables from files (Docker secrets)
@@ -294,6 +294,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.12.23:** - Rebase to Alpine 3.19.
 * **25.08.22:** - Rebase to Alpine 3.18.
 * **07.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **21.03.23:** - Restore git and openssh packages for git storage support.
