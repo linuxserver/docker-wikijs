@@ -401,8 +401,8 @@ builtins                                            5.0.1                  npm
 bunyan                                              1.8.15                 npm                    
 busboy                                              0.2.14                 npm                    
 busboy                                              0.3.1                  npm                    
-busybox                                             1.36.1-r15             apk                    
-busybox-binsh                                       1.36.1-r15             apk                    
+busybox                                             1.36.1-r18             apk                    
+busybox-binsh                                       1.36.1-r18             apk                    
 bytes                                               3.0.0                  npm                    
 bytes                                               3.1.2                  npm                    
 c-ares                                              1.27.0-r0              apk                    
@@ -886,7 +886,7 @@ libattr                                             2.5.1-r5               apk
 libbase64                                           0.5.0-r0               apk                    
 libbsd                                              0.11.7-r3              apk                    
 libc-utils                                          0.7.2-r5               apk                    
-libcrypto3                                          3.1.4-r6               apk                    
+libcrypto3                                          3.1.5-r0               apk                    
 libcurl                                             8.5.0-r0               apk                    
 libedit                                             20230828.3.1-r3        apk                    
 libexpat                                            2.6.2-r0               apk                    
@@ -907,7 +907,7 @@ libnpmsearch                                        7.0.1                  npm
 libnpmteam                                          6.0.1                  npm                    
 libnpmversion                                       5.0.2                  npm                    
 libproc2                                            4.0.4-r0               apk                    
-libssl3                                             3.1.4-r6               apk                    
+libssl3                                             3.1.5-r0               apk                    
 libstdc++                                           13.2.1_git20231014-r0  apk                    
 libunistring                                        1.1-r2                 apk                    
 liftoff                                             3.1.0                  npm                    
@@ -1363,7 +1363,7 @@ ssh2                                                1.11.0                 npm
 ssh2                                                1.15.0                 npm                    
 ssh2-promise                                        1.0.3                  npm                    
 sshpk                                               1.18.0                 npm                    
-ssl_client                                          1.36.1-r15             apk                    
+ssl_client                                          1.36.1-r18             apk                    
 ssri                                                10.0.5                 npm                    
 ssri                                                8.0.1                  npm                    
 stack-trace                                         0.0.10                 npm                    
