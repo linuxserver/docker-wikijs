@@ -6,8 +6,7 @@ project_url: "https://github.com/Requarks/wiki"
 project_logo: "https://static.requarks.io/logo/wikijs-full.svg"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) A modern, lightweight and powerful wiki app built on NodeJS."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_blurb_optional_extras_enabled: false
-project_blurb_optional_extras: []
+
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
@@ -15,9 +14,6 @@ available_architectures:
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
@@ -42,7 +38,8 @@ app_setup_block: |
   For more information please see the [official documentation](https://docs.requarks.io/).
 # changelog
 changelogs:
-  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
+  - {date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
+  - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - {date: "25.08.22:", desc: "Rebase to Alpine 3.18."}
   - {date: "07.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "21.03.23:", desc: "Restore git and openssh packages for git storage support."}
