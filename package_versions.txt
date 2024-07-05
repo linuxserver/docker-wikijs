@@ -503,7 +503,7 @@ cssom                                               0.3.8                  npm
 cssom                                               0.4.4                  npm                    
 cssstyle                                            2.3.0                  npm                    
 cuint                                               0.2.2                  npm                    
-curl                                                8.7.1-r0               apk                    
+curl                                                8.8.0-r0               apk                    
 custom-error-instance                               2.1.2                  npm                    
 dashdash                                            1.14.1                 npm                    
 data-urls                                           2.0.0                  npm                    
@@ -878,8 +878,8 @@ libacl                                              2.3.2-r0               apk
 libattr                                             2.5.2-r0               apk                    
 libbase64                                           0.5.2-r0               apk                    
 libbsd                                              0.12.2-r0              apk                    
-libcrypto3                                          3.3.1-r0               apk                    
-libcurl                                             8.7.1-r0               apk                    
+libcrypto3                                          3.3.1-r1               apk                    
+libcurl                                             8.8.0-r0               apk                    
 libedit                                             20240517.3.1-r0        apk                    
 libexpat                                            2.6.2-r0               apk                    
 libgcc                                              13.2.1_git20240309-r0  apk                    
@@ -900,7 +900,7 @@ libnpmteam                                          6.0.5                  npm
 libnpmversion                                       6.0.2                  npm                    
 libproc2                                            4.0.4-r0               apk                    
 libpsl                                              0.21.5-r1              apk                    
-libssl3                                             3.3.1-r0               apk                    
+libssl3                                             3.3.1-r1               apk                    
 libstdc++                                           13.2.1_git20240309-r0  apk                    
 libunistring                                        1.2-r0                 apk                    
 liftoff                                             3.1.0                  npm                    
@@ -1017,7 +1017,7 @@ nd-table                                            1.2.2                  npm
 negotiator                                          0.6.3                  npm   (+1 duplicate)   
 nestedtest                                          1.0.0                  npm                    
 netcat-openbsd                                      1.226-r0               apk                    
-nghttp2-libs                                        1.62.0-r0              apk                    
+nghttp2-libs                                        1.62.1-r0              apk                    
 no-case                                             3.0.4                  npm                    
 node-2fa                                            1.1.2                  npm                    
 node-addon-api                                      4.3.0                  npm                    
@@ -1081,13 +1081,13 @@ once                                                1.4.0                  npm
 one-time                                            1.0.0                  npm                    
 oniguruma                                           6.9.9-r0               apk                    
 open                                                7.4.2                  npm                    
-openssh                                             9.7_p1-r3              apk                    
-openssh-client-common                               9.7_p1-r3              apk                    
-openssh-client-default                              9.7_p1-r3              apk                    
-openssh-keygen                                      9.7_p1-r3              apk                    
-openssh-server                                      9.7_p1-r3              apk                    
-openssh-server-common                               9.7_p1-r3              apk                    
-openssh-sftp-server                                 9.7_p1-r3              apk                    
+openssh                                             9.7_p1-r4              apk                    
+openssh-client-common                               9.7_p1-r4              apk                    
+openssh-client-default                              9.7_p1-r4              apk                    
+openssh-keygen                                      9.7_p1-r4              apk                    
+openssh-server                                      9.7_p1-r4              apk                    
+openssh-server-common                               9.7_p1-r4              apk                    
+openssh-sftp-server                                 9.7_p1-r4              apk                    
 optimism                                            0.18.0                 npm                    
 optionator                                          0.8.3                  npm                    
 os-tmpdir                                           1.0.2                  npm                    
