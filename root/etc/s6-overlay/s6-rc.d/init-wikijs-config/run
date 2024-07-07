@@ -1,31 +1,19 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-mkdir -p /data
-
-DB_TYPE=${DB_TYPE:-sqlite}
-DB_HOST=${DB_HOST:-mariadb}
-DB_PORT=${DB_PORT:-3306}
-DB_USER=${DB_USER:-root}
-DB_PASS=${DB_PASS:-root}
-DB_NAME=${DB_NAME:-wikijs}
+if [[ -z ${DB_TYPE} ]]; then
+    printf "sqlite" > /run/s6/container_environment/DB_TYPE
+fi
 
 if [[ ! -f "/config/config.yml" ]]; then
     cp /defaults/config.yml /config/config.yml
-
-    sed -i "s|{{DB_TYPE}}|"${DB_TYPE}"|g" /config/config.yml
-    sed -i "s|{{DB_HOST}}|"${DB_HOST}"|g" /config/config.yml
-    sed -i "s|{{DB_PORT}}|"${DB_PORT}"|g" /config/config.yml
-    sed -i "s|{{DB_USER}}|"${DB_USER}"|g" /config/config.yml
-    sed -i "s|{{DB_PASS}}|"${DB_PASS}"|g" /config/config.yml
-    sed -i "s|{{DB_NAME}}|"${DB_NAME}"|g" /config/config.yml
 fi
-
-ln -sf /config/config.yml /app/wiki/config.yml
 
 # permissions
 lsiown -R abc:abc \
-    /app/wiki/data \
     /config
-lsiown abc:abc \
-    /data
+
+if grep -qe ' /data ' /proc/mounts; then
+    lsiown abc:abc \
+        /data
+fi
