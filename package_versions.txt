@@ -405,8 +405,8 @@ busybox-binsh                                       1.36.1-r29             apk
 bytes                                               3.0.0                  npm                    
 bytes                                               3.1.2                  npm                    
 c-ares                                              1.28.1-r0              apk                    
-ca-certificates                                     20240226-r0            apk                    
-ca-certificates-bundle                              20240226-r0            apk                    
+ca-certificates                                     20240705-r0            apk                    
+ca-certificates-bundle                              20240705-r0            apk                    
 cacache                                             15.3.0                 npm                    
 cacache                                             18.0.3                 npm                    
 cache-base                                          1.0.1                  npm                    
@@ -878,7 +878,7 @@ libacl                                              2.3.2-r0               apk
 libattr                                             2.5.2-r0               apk                    
 libbase64                                           0.5.2-r0               apk                    
 libbsd                                              0.12.2-r0              apk                    
-libcrypto3                                          3.3.1-r1               apk                    
+libcrypto3                                          3.3.1-r3               apk                    
 libcurl                                             8.8.0-r0               apk                    
 libedit                                             20240517.3.1-r0        apk                    
 libexpat                                            2.6.2-r0               apk                    
@@ -900,7 +900,7 @@ libnpmteam                                          6.0.5                  npm
 libnpmversion                                       6.0.2                  npm                    
 libproc2                                            4.0.4-r0               apk                    
 libpsl                                              0.21.5-r1              apk                    
-libssl3                                             3.3.1-r1               apk                    
+libssl3                                             3.3.1-r3               apk                    
 libstdc++                                           13.2.1_git20240309-r0  apk                    
 libunistring                                        1.2-r0                 apk                    
 liftoff                                             3.1.0                  npm                    
@@ -1033,7 +1033,7 @@ node-int64                                          0.4.0                  npm
 node-jose                                           2.2.0                  npm                    
 node-releases                                       2.0.14                 npm                    
 node-uuid                                           1.4.1                  npm                    
-nodejs                                              20.13.1-r0             apk                    
+nodejs                                              20.15.1-r0             apk                    
 nodemailer                                          6.9.1                  npm                    
 nopt                                                1.0.10                 npm                    
 nopt                                                5.0.0                  npm                    
