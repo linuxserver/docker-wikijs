@@ -63,6 +63,11 @@ Please note that the database configuration environment variables will apply _on
 
 For more information please see the [official documentation](https://docs.requarks.io/).
 
+## Read-Only Operation
+
+This image can be run with a read-only container filesystem. For details please [read the docs](https://docs.linuxserver.io/misc/read-only/).
+
+
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
@@ -132,6 +137,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e DB_PASS=` | DB password (postgres only) |
 | `-v /config` | Persistent config files |
 | `-v /data` | Where Wiki.js data is stored. |
+| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://docs.linuxserver.io/misc/read-only/). |
 
 ## Environment variables from files (Docker secrets)
 
