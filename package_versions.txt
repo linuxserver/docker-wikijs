@@ -502,7 +502,7 @@ cssom                                               0.3.8                  npm
 cssom                                               0.4.4                  npm                    
 cssstyle                                            2.3.0                  npm                    
 cuint                                               0.2.2                  npm                    
-curl                                                8.10.0-r0              apk                    
+curl                                                8.9.1-r2               apk                    
 custom-error-instance                               2.1.2                  npm                    
 dashdash                                            1.14.1                 npm                    
 data-urls                                           2.0.0                  npm                    
@@ -881,7 +881,7 @@ libattr                                             2.5.2-r0               apk
 libbase64                                           0.5.2-r0               apk                    
 libbsd                                              0.12.2-r0              apk                    
 libcrypto3                                          3.3.2-r0               apk                    
-libcurl                                             8.10.0-r0              apk                    
+libcurl                                             8.9.1-r2               apk                    
 libedit                                             20240517.3.1-r0        apk                    
 libexpat                                            2.6.3-r0               apk                    
 libgcc                                              13.2.1_git20240309-r0  apk                    
