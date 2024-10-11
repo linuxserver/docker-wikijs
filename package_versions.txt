@@ -16,6 +16,38 @@ NAME                                                VERSION                TYPE
 @algolia/transporter                                4.5.1                  npm                    
 @ampproject/remapping                               2.3.0                  npm                    
 @apollo/client                                      3.11.8                 npm                    
+@apollo/client/cache                                UNKNOWN                npm                    
+@apollo/client/core                                 UNKNOWN                npm                    
+@apollo/client/dev                                  UNKNOWN                npm                    
+@apollo/client/errors                               UNKNOWN                npm                    
+@apollo/client/link/batch                           UNKNOWN                npm                    
+@apollo/client/link/batch-http                      UNKNOWN                npm                    
+@apollo/client/link/context                         UNKNOWN                npm                    
+@apollo/client/link/core                            UNKNOWN                npm                    
+@apollo/client/link/error                           UNKNOWN                npm                    
+@apollo/client/link/http                            UNKNOWN                npm                    
+@apollo/client/link/persisted-queries               UNKNOWN                npm                    
+@apollo/client/link/remove-typename                 UNKNOWN                npm                    
+@apollo/client/link/retry                           UNKNOWN                npm                    
+@apollo/client/link/schema                          UNKNOWN                npm                    
+@apollo/client/link/subscriptions                   UNKNOWN                npm                    
+@apollo/client/link/utils                           UNKNOWN                npm                    
+@apollo/client/link/ws                              UNKNOWN                npm                    
+@apollo/client/react                                UNKNOWN                npm                    
+@apollo/client/react/components                     UNKNOWN                npm                    
+@apollo/client/react/context                        UNKNOWN                npm                    
+@apollo/client/react/hoc                            UNKNOWN                npm                    
+@apollo/client/react/hooks                          UNKNOWN                npm                    
+@apollo/client/react/internal                       UNKNOWN                npm                    
+@apollo/client/react/parser                         UNKNOWN                npm                    
+@apollo/client/react/ssr                            UNKNOWN                npm                    
+@apollo/client/testing                              UNKNOWN                npm                    
+@apollo/client/testing/core                         UNKNOWN                npm                    
+@apollo/client/testing/experimental                 UNKNOWN                npm                    
+@apollo/client/utilities                            UNKNOWN                npm                    
+@apollo/client/utilities/globals                    UNKNOWN                npm                    
+@apollo/client/utilities/subscriptions/relay        UNKNOWN                npm                    
+@apollo/client/utilities/subscriptions/urql         UNKNOWN                npm                    
 @apollo/protobufjs                                  1.2.2                  npm                    
 @apollographql/apollo-tools                         0.5.4                  npm                    
 @apollographql/graphql-playground-html              1.6.27                 npm                    
@@ -366,6 +398,7 @@ base                                                0.11.2                 npm
 base64-js                                           1.5.1                  npm                    
 base64url                                           3.0.1                  npm                    
 bash                                                5.2.26-r0              apk                    
+baz                                                 UNKNOWN                npm                    
 bcrypt-pbkdf                                        1.0.2                  npm                    
 bcryptjs                                            2.4.3                  npm                    
 bcryptjs-then                                       1.0.1                  npm                    
@@ -386,9 +419,11 @@ braces                                              2.3.2                  npm
 braces                                              3.0.3                  npm                    
 brotli-libs                                         1.1.0-r2               apk                    
 browser-process-hrtime                              1.0.0                  npm                    
+browser_field                                       UNKNOWN                npm                    
 browserslist                                        4.23.3                 npm                    
 bser                                                2.1.1                  npm                    
 bson                                                1.1.6                  npm                    
+bson                                                UNKNOWN                npm                    
 buffer                                              4.9.2                  npm                    
 buffer                                              5.7.1                  npm   (+1 duplicate)   
 buffer                                              6.0.3                  npm                    
@@ -611,6 +646,7 @@ extglob                                             2.0.4                  npm
 extract-files                                       9.0.0                  npm                    
 extsprintf                                          1.3.0                  npm                    
 extsprintf                                          1.4.1                  npm   (+2 duplicates)  
+false_main                                          UNKNOWN                npm                    
 fast-deep-equal                                     3.1.3                  npm                    
 fast-glob                                           3.3.2                  npm                    
 fast-json-stable-stringify                          2.1.0                  npm                    
@@ -761,6 +797,7 @@ init-package-json                                   6.0.3                  npm
 internal-slot                                       1.0.7                  npm                    
 interpret                                           2.2.0                  npm                    
 into-stream                                         5.1.1                  npm                    
+invalid_main                                        UNKNOWN                npm                    
 invariant                                           2.2.4                  npm                    
 ip-address                                          5.9.4                  npm                    
 ip-address                                          9.0.5                  npm   (+1 duplicate)   
@@ -1429,6 +1466,7 @@ triple-beam                                         1.4.1                  npm
 truncate-utf8-bytes                                 1.0.2                  npm                    
 ts-invariant                                        0.10.3                 npm                    
 ts-invariant                                        0.4.4                  npm                    
+ts-invariant/process                                UNKNOWN                npm                    
 tslib                                               1.14.1                 npm   (+5 duplicates)  
 tslib                                               2.0.3                  npm   (+5 duplicates)  
 tslib                                               2.1.0                  npm   (+5 duplicates)  
