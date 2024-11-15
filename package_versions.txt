@@ -931,7 +931,7 @@ libgcc                                              13.2.1_git20240309-r0  apk
 libidn2                                             2.3.7-r0               apk                    
 libintl                                             0.22.5-r0              apk                    
 libmd                                               1.1.0-r0               apk                    
-libncursesw                                         6.4_p20240420-r1       apk                    
+libncursesw                                         6.4_p20240420-r2       apk                    
 libnpmaccess                                        8.0.6                  npm                    
 libnpmdiff                                          6.1.2                  npm                    
 libnpmexec                                          8.1.1                  npm                    
@@ -1059,7 +1059,7 @@ nanoid                                              3.2.0                  npm
 nanomatch                                           1.2.13                 npm                    
 native-duplexpair                                   1.0.0                  npm                    
 ncp                                                 2.0.0                  npm                    
-ncurses-terminfo-base                               6.4_p20240420-r1       apk                    
+ncurses-terminfo-base                               6.4_p20240420-r2       apk                    
 nd-table                                            1.2.2                  npm                    
 negotiator                                          0.6.3                  npm   (+1 duplicate)   
 nestedtest                                          1.0.0                  npm                    
