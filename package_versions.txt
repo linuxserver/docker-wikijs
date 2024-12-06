@@ -334,7 +334,7 @@ any-promise                                         1.3.0                  npm
 anymatch                                            3.1.3                  npm                    
 apg-conv-api                                        1.0.1                  npm                    
 apg-lib                                             3.2.0                  npm                    
-apk-tools                                           2.14.4-r0              apk                    
+apk-tools                                           2.14.4-r1              apk                    
 apollo-cache-control                                0.15.0                 npm                    
 apollo-datasource                                   0.10.0                 npm                    
 apollo-fetch                                        0.7.0                  npm                    
@@ -548,7 +548,7 @@ cssom                                               0.3.8                  npm
 cssom                                               0.4.4                  npm                    
 cssstyle                                            2.3.0                  npm                    
 cuint                                               0.2.2                  npm                    
-curl                                                8.9.1-r2               apk                    
+curl                                                8.11.0-r2              apk                    
 custom-error-instance                               2.1.2                  npm                    
 dashdash                                            1.14.1                 npm                    
 data-urls                                           2.0.0                  npm                    
@@ -928,8 +928,8 @@ libacl                                              2.3.2-r0               apk
 libattr                                             2.5.2-r0               apk                    
 libbase64                                           0.5.2-r0               apk                    
 libbsd                                              0.12.2-r0              apk                    
-libcrypto3                                          3.3.2-r0               apk                    
-libcurl                                             8.9.1-r2               apk                    
+libcrypto3                                          3.3.2-r1               apk                    
+libcurl                                             8.11.0-r2              apk                    
 libedit                                             20240517.3.1-r0        apk                    
 libexpat                                            2.6.4-r0               apk                    
 libgcc                                              13.2.1_git20240309-r0  apk                    
@@ -950,7 +950,7 @@ libnpmteam                                          7.0.0                  npm
 libnpmversion                                       7.0.0                  npm                    
 libproc2                                            4.0.4-r0               apk                    
 libpsl                                              0.21.5-r1              apk                    
-libssl3                                             3.3.2-r0               apk                    
+libssl3                                             3.3.2-r1               apk                    
 libstdc++                                           13.2.1_git20240309-r0  apk                    
 libunistring                                        1.2-r0                 apk                    
 liftoff                                             3.1.0                  npm                    
