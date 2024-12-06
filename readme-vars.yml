@@ -6,7 +6,6 @@ project_url: "https://github.com/Requarks/wiki"
 project_logo: "https://static.requarks.io/logo/wikijs-full.svg"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) A modern, lightweight and powerful wiki app built on NodeJS."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
@@ -30,15 +29,56 @@ opt_param_env_vars:
   - {env_var: "DB_NAME", env_value: "", desc: "DB name (postgres only)"}
   - {env_var: "DB_USER", env_value: "", desc: "DB username (postgres only)"}
   - {env_var: "DB_PASS", env_value: "", desc: "DB password (postgres only)"}
-
 readonly_supported: true
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
   Please note that the database configuration environment variables will apply _on first run only_, after which you will need to directly edit /config/config.yml to change your settings.
 
   For more information please see the [official documentation](https://docs.requarks.io/).
+# init diagram
+init_diagram: |
+  "wikijs:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-wikijs-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-config -> init-wikijs-config
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-wikijs
+    svc-wikijs -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.20"
+  }
+  "wikijs:latest" <- Base Images
 # changelog
 changelogs:
   - {date: "01.06.24:", desc: "Rebase to Alpine 3.20."}
