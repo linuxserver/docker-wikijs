@@ -447,8 +447,8 @@ busybox-binsh                                       1.36.1-r29             apk
 bytes                                               3.0.0                  npm                    
 bytes                                               3.1.2                  npm                    
 c-ares                                              1.33.1-r0              apk                    
-ca-certificates                                     20240705-r0            apk                    
-ca-certificates-bundle                              20240705-r0            apk                    
+ca-certificates                                     20241121-r0            apk                    
+ca-certificates-bundle                              20241121-r0            apk                    
 cacache                                             15.3.0                 npm                    
 cacache                                             18.0.4                 npm                    
 cacache                                             19.0.1                 npm                    
