@@ -324,7 +324,7 @@ algoliasearch                                       4.5.1                  npm
 alpine-baselayout                                   3.6.5-r0               apk                    
 alpine-baselayout-data                              3.6.5-r0               apk                    
 alpine-keys                                         2.4-r1                 apk                    
-alpine-release                                      3.20.3-r0              apk                    
+alpine-release                                      3.20.5-r0              apk                    
 ansi-regex                                          5.0.1                  npm   (+1 duplicate)   
 ansi-regex                                          6.1.0                  npm   (+1 duplicate)   
 ansi-styles                                         3.2.1                  npm                    
@@ -447,8 +447,8 @@ busybox-binsh                                       1.36.1-r29             apk
 bytes                                               3.0.0                  npm                    
 bytes                                               3.1.2                  npm                    
 c-ares                                              1.33.1-r0              apk                    
-ca-certificates                                     20241121-r0            apk                    
-ca-certificates-bundle                              20241121-r0            apk                    
+ca-certificates                                     20241121-r1            apk                    
+ca-certificates-bundle                              20241121-r1            apk                    
 cacache                                             15.3.0                 npm                    
 cacache                                             18.0.4                 npm                    
 cacache                                             19.0.1                 npm                    
@@ -526,10 +526,10 @@ copy-descriptor                                     0.1.1                  npm
 core-js-pure                                        3.38.1                 npm                    
 core-util-is                                        1.0.2                  npm                    
 core-util-is                                        1.0.3                  npm   (+2 duplicates)  
-coreutils                                           9.5-r1                 apk                    
-coreutils-env                                       9.5-r1                 apk                    
-coreutils-fmt                                       9.5-r1                 apk                    
-coreutils-sha512sum                                 9.5-r1                 apk                    
+coreutils                                           9.5-r2                 apk                    
+coreutils-env                                       9.5-r2                 apk                    
+coreutils-fmt                                       9.5-r2                 apk                    
+coreutils-sha512sum                                 9.5-r2                 apk                    
 cors                                                2.8.5                  npm                    
 cpu-features                                        0.0.10                 npm                    
 cross-fetch                                         1.1.1                  npm                    
@@ -720,8 +720,8 @@ get-value                                           2.0.6                  npm
 getopts                                             2.2.5                  npm                    
 getos                                               3.2.1                  npm                    
 getpass                                             0.1.7                  npm                    
-git                                                 2.45.2-r0              apk                    
-git-init-template                                   2.45.2-r0              apk                    
+git                                                 2.45.3-r0              apk                    
+git-init-template                                   2.45.3-r0              apk                    
 glob                                                10.4.5                 npm                    
 glob                                                6.0.4                  npm                    
 glob                                                7.1.3                  npm                    
@@ -733,6 +733,7 @@ globals                                             11.12.0                npm
 globalthis                                          1.0.4                  npm                    
 globby                                              11.0.3                 npm                    
 globby                                              11.1.0                 npm                    
+gmp                                                 6.3.0-r1               apk                    
 gopd                                                1.0.1                  npm                    
 graceful-fs                                         4.2.11                 npm   (+1 duplicate)   
 graphql                                             15.3.0                 npm                    
