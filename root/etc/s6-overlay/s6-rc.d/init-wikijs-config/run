@@ -9,11 +9,13 @@ if [[ ! -f "/config/config.yml" ]]; then
     cp /defaults/config.yml /config/config.yml
 fi
 
-# permissions
-lsiown -R abc:abc \
-    /config
+if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
+    # permissions
+    lsiown -R abc:abc \
+        /config
 
-if grep -qe ' /data ' /proc/mounts; then
-    lsiown abc:abc \
-        /data
+    if grep -qe ' /data ' /proc/mounts; then
+        lsiown abc:abc \
+            /data
+    fi
 fi

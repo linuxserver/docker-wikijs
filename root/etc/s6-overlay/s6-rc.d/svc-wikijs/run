@@ -3,6 +3,12 @@
 
 export CONFIG_FILE="/config/config.yml"
 
-exec \
-    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3000" \
-        cd /app/wiki s6-setuidgid abc /usr/bin/node server
+if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3000" \
+            cd /app/wiki s6-setuidgid abc /usr/bin/node server
+else
+    exec \
+        s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 3000" \
+            cd /app/wiki /usr/bin/node server
+fi
