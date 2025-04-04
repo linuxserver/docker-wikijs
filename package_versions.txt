@@ -1543,7 +1543,7 @@ typedarray                                          0.0.6             npm
 typedarray-to-buffer                                3.1.5             npm                    
 typical                                             4.0.0             npm                    
 typical                                             7.3.0             npm                    
-tzdata                                              2025a-r0          apk                    
+tzdata                                              2025b-r0          apk                    
 ua-parser-js                                        1.0.40            npm                    
 uc.micro                                            1.0.6             npm                    
 uid-safe                                            2.1.5             npm                    
