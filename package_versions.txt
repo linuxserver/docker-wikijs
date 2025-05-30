@@ -1108,7 +1108,7 @@ node-int64                                          0.4.0             npm
 node-jose                                           2.2.0             npm                      
 node-releases                                       2.0.19            npm                      
 node-uuid                                           1.4.1             npm                      
-nodejs                                              22.13.1-r0        apk                      
+nodejs                                              22.15.1-r0        apk                      
 nodemailer                                          6.9.1             npm                      
 nopt                                                1.0.10            npm                      
 nopt                                                5.0.0             npm                      
