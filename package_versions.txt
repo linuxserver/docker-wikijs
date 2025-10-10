@@ -460,8 +460,8 @@ busybox-binsh                                       1.37.0-r13        apk
 bytes                                               3.0.0             npm                      
 bytes                                               3.1.2             npm                      
 c-ares                                              1.34.5-r0         apk                      
-ca-certificates                                     20250619-r0       apk                      
-ca-certificates-bundle                              20250619-r0       apk                      
+ca-certificates                                     20250911-r0       apk                      
+ca-certificates-bundle                              20250911-r0       apk                      
 cacache                                             15.3.0            npm                      
 cacache                                             18.0.4            npm                      
 cacache                                             19.0.1            npm                      
@@ -564,7 +564,7 @@ cssom                                               0.3.8             npm
 cssom                                               0.4.4             npm                      
 cssstyle                                            2.3.0             npm                      
 cuint                                               0.2.2             npm                      
-curl                                                8.12.1-r1         apk                      
+curl                                                8.14.1-r2         apk                      
 custom-error-instance                               2.1.2             npm                      
 dashdash                                            1.14.1            npm                      
 data-urls                                           2.0.0             npm                      
@@ -954,8 +954,8 @@ ldapjs                                              2.3.3             npm
 levn                                                0.3.0             npm                      
 libattr                                             2.5.2-r2          apk                      
 libbsd                                              0.12.2-r0         apk                      
-libcrypto3                                          3.3.4-r0          apk                      
-libcurl                                             8.12.1-r1         apk                      
+libcrypto3                                          3.3.5-r0          apk                      
+libcurl                                             8.14.1-r2         apk                      
 libedit                                             20240808.3.1-r0   apk                      
 libexpat                                            2.7.3-r0          apk                      
 libgcc                                              14.2.0-r4         apk                      
@@ -976,7 +976,7 @@ libnpmteam                                          7.0.0             npm
 libnpmversion                                       7.0.0             npm                      
 libproc2                                            4.0.4-r2          apk                      
 libpsl                                              0.21.5-r3         apk                      
-libssl3                                             3.3.4-r0          apk                      
+libssl3                                             3.3.5-r0          apk                      
 libstdc++                                           14.2.0-r4         apk                      
 libunistring                                        1.2-r0            apk                      
 liftoff                                             3.1.0             npm                      
