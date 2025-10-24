@@ -1233,7 +1233,7 @@ path-to-regexp                                      0.1.12            npm     (+
 path-to-regexp                                      0.1.7             npm                      
 path-type                                           4.0.0             npm                      
 pause                                               0.0.1             npm                      
-pcre2                                               10.43-r1          apk                      
+pcre2                                               10.46-r0          apk                      
 peek-readable                                       4.1.0             npm                      
 pem-jwk                                             2.0.0             npm                      
 performance-now                                     2.1.0             npm                      
