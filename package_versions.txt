@@ -1541,7 +1541,7 @@ unc-path-regex                                      0.1.2             npm
 underscore                                          1.13.7            npm                      
 underscore                                          1.6.0             npm                      
 underscore                                          1.8.3             npm                      
-undici                                              6.22.0            npm                      
+undici                                              6.23.0            npm                      
 undici-types                                        7.16.0            npm                      
 union-value                                         1.0.1             npm                      
 unique-filename                                     1.1.1             npm                      
@@ -1607,7 +1607,7 @@ which-collection                                    1.0.2             npm
 which-module                                        2.0.1             npm                      
 which-typed-array                                   1.1.19            npm                      
 wide-align                                          1.1.5             npm                      
-wiki                                                2.5.309           npm                      
+wiki                                                2.5.310           npm                      
 winston                                             3.8.2             npm                      
 winston-transport                                   4.9.0             npm                      
 with                                                7.0.2             npm                      
