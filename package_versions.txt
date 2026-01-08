@@ -414,7 +414,7 @@ balanced-match                                      1.0.2             npm     (+
 base                                                0.11.2            npm                      
 base64-js                                           1.5.1             npm                      
 base64url                                           3.0.1             npm                      
-baseline-browser-mapping                            2.9.11            npm                      
+baseline-browser-mapping                            2.9.12            npm                      
 bash                                                5.2.37-r0         apk                      
 baz                                                 UNKNOWN           npm                      
 bcrypt-pbkdf                                        1.0.2             npm                      
@@ -469,7 +469,7 @@ call-bind-apply-helpers                             1.0.2             npm
 call-bound                                          1.0.4             npm                      
 camel-case                                          4.1.2             npm                      
 camelcase                                           5.3.1             npm                      
-caniuse-lite                                        1.0.30001762      npm                      
+caniuse-lite                                        1.0.30001763      npm                      
 caseless                                            0.12.0            npm                      
 catatonit                                           0.2.1-r0          apk                      
 chalk                                               4.1.0             npm                      
@@ -1607,7 +1607,7 @@ which-collection                                    1.0.2             npm
 which-module                                        2.0.1             npm                      
 which-typed-array                                   1.1.19            npm                      
 wide-align                                          1.1.5             npm                      
-wiki                                                2.5.310           npm                      
+wiki                                                2.5.311           npm                      
 winston                                             3.8.2             npm                      
 winston-transport                                   4.9.0             npm                      
 with                                                7.0.2             npm                      
