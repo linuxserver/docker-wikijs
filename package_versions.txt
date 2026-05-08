@@ -334,7 +334,7 @@ algoliasearch                                       4.5.1             npm
 alpine-baselayout                                   3.7.0-r0          apk                      
 alpine-baselayout-data                              3.7.0-r0          apk                      
 alpine-keys                                         2.5-r0            apk                      
-alpine-release                                      3.22.3-r0         apk                      
+alpine-release                                      3.22.4-r0         apk                      
 ansi-regex                                          5.0.1             npm     (+1 duplicate)   
 ansi-styles                                         4.3.0             npm                      
 any-promise                                         1.3.0             npm                      
@@ -459,8 +459,8 @@ busybox                                             1.37.0-r20        apk
 busybox-binsh                                       1.37.0-r20        apk                      
 bytes                                               3.1.2             npm                      
 c-ares                                              1.34.6-r0         apk                      
-ca-certificates                                     20250911-r0       apk                      
-ca-certificates-bundle                              20250911-r0       apk                      
+ca-certificates                                     20260413-r0       apk                      
+ca-certificates-bundle                              20260413-r0       apk                      
 cacache                                             15.3.0            npm                      
 cacache                                             20.0.3            npm                      
 cache-base                                          1.0.1             npm                      
@@ -1540,7 +1540,7 @@ typed-array-length                                  1.0.7             npm
 typedarray                                          0.0.6             npm                      
 typedarray-to-buffer                                3.1.5             npm                      
 typical                                             7.3.0             npm                      
-tzdata                                              2026a-r0          apk                      
+tzdata                                              2026b-r0          apk                      
 ua-parser-js                                        1.0.41            npm                      
 uc.micro                                            1.0.6             npm                      
 uid-safe                                            2.1.5             npm                      
@@ -1661,5 +1661,5 @@ yocto-queue                                         0.1.0             npm
 zen-observable                                      0.8.15            npm                      
 zen-observable-ts                                   0.8.21            npm                      
 zen-observable-ts                                   1.2.5             npm                      
-zlib                                                1.3.1-r2          apk                      
+zlib                                                1.3.2-r0          apk                      
 zstd-libs                                           1.5.7-r0          apk                      
