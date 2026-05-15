@@ -1101,7 +1101,7 @@ negotiator                                          0.6.4             npm
 negotiator                                          1.0.0             npm                      
 nestedtest                                          1.0.0             npm                      
 netcat-openbsd                                      1.229.1-r0        apk                      
-nghttp2-libs                                        1.65.0-r0         apk                      
+nghttp2-libs                                        1.69.0-r0         apk                      
 no-case                                             3.0.4             npm                      
 node-2fa                                            1.1.2             npm                      
 node-abi                                            3.89.0            npm                      
