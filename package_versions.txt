@@ -957,7 +957,7 @@ libbsd                                              0.12.2-r0         apk
 libcrypto3                                          3.5.6-r0          apk                      
 libcurl                                             8.14.1-r2         apk                      
 libedit                                             20250104.3.1-r1   apk                      
-libexpat                                            2.7.5-r0          apk                      
+libexpat                                            2.8.1-r0          apk                      
 libgcc                                              14.2.0-r6         apk                      
 libidn2                                             2.3.7-r0          apk                      
 libintl                                             0.24.1-r0         apk                      
@@ -1117,7 +1117,7 @@ node-int64                                          0.4.0             npm
 node-jose                                           2.2.0             npm                      
 node-releases                                       2.0.38            npm                      
 node-uuid                                           1.4.1             npm                      
-nodejs                                              22.22.2-r0        apk                      
+nodejs                                              22.23.0-r0        apk                      
 nodemailer                                          6.9.1             npm                      
 nopt                                                1.0.10            npm                      
 nopt                                                5.0.0             npm                      
