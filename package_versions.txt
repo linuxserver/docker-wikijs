@@ -561,7 +561,7 @@ cssom                                               0.3.8             npm
 cssom                                               0.4.4             npm                      
 cssstyle                                            2.3.0             npm                      
 cuint                                               0.2.2             npm                      
-curl                                                8.14.1-r2         apk                      
+curl                                                8.14.1-r3         apk                      
 custom-error-instance                               2.1.2             npm                      
 dashdash                                            1.14.1            npm                      
 data-urls                                           2.0.0             npm                      
@@ -955,7 +955,7 @@ libapk2                                             2.14.10-r0        apk
 libattr                                             2.5.2-r2          apk                      
 libbsd                                              0.12.2-r0         apk                      
 libcrypto3                                          3.5.7-r0          apk                      
-libcurl                                             8.14.1-r2         apk                      
+libcurl                                             8.14.1-r3         apk                      
 libedit                                             20250104.3.1-r1   apk                      
 libexpat                                            2.8.2-r0          apk                      
 libgcc                                              14.2.0-r6         apk                      
@@ -1540,7 +1540,7 @@ typed-array-length                                  1.0.7             npm
 typedarray                                          0.0.6             npm                      
 typedarray-to-buffer                                3.1.5             npm                      
 typical                                             7.3.0             npm                      
-tzdata                                              2026b-r0          apk                      
+tzdata                                              2026c-r0          apk                      
 ua-parser-js                                        1.0.41            npm                      
 uc.micro                                            1.0.6             npm                      
 uid-safe                                            2.1.5             npm                      
