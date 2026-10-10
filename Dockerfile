@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.22
+FROM ghcr.io/linuxserver/baseimage-alpine:3.24
 
 # set version label
 ARG BUILD_DATE
@@ -26,12 +26,12 @@ RUN \
   echo "**** install wiki.js ****" && \
   mkdir -p /app/wiki && \
   if [ -z ${WIKIJS_RELEASE} ]; then \
-    WIKIJS_RELEASE=$(curl -sX GET "https://api.github.com/repos/Requarks/wiki/releases/latest" \
+    WIKIJS_RELEASE=$(curl -sX GET "https://api.github.com/repos/Requarks/wiki-v2/releases/latest" \
     | jq -r '.tag_name'); \
   fi && \
   curl -o \
     /tmp/wiki.tar.gz -L \
-    "https://github.com/Requarks/wiki/releases/download/${WIKIJS_RELEASE}/wiki-js.tar.gz" && \
+    "https://github.com/Requarks/wiki-v2/releases/download/${WIKIJS_RELEASE}/wiki-js.tar.gz" && \
   tar xf \
     /tmp/wiki.tar.gz -C \
     /app/wiki/ && \
