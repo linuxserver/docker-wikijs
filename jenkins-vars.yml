@@ -9,7 +9,7 @@ ls_branch: master
 repo_vars:
   - EXT_GIT_BRANCH = 'master'
   - EXT_USER = 'Requarks'
-  - EXT_REPO = 'wiki'
+  - EXT_REPO = 'wiki-v2'
   - BUILD_VERSION_ARG = 'WIKIJS_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-wikijs'
