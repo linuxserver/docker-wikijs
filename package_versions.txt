@@ -949,7 +949,7 @@ levn                                                0.3.0             npm
 libapk                                              3.0.9-r0          apk                      
 libattr                                             2.5.2-r2          apk                      
 libbsd                                              0.12.2-r0         apk                      
-libcrypto3                                          3.5.9-r0          apk                      
+libcrypto3                                          3.5.9-r1          apk                      
 libcurl                                             8.23.0-r0         apk                      
 libedit                                             20260508.3.1-r1   apk                      
 libexpat                                            2.10.0-r0         apk                      
@@ -970,7 +970,7 @@ libnpmteam                                          8.0.2             npm
 libnpmversion                                       8.0.3             npm                      
 libproc2                                            4.0.6-r0          apk                      
 libpsl                                              0.21.5-r3         apk                      
-libssl3                                             3.5.9-r0          apk                      
+libssl3                                             3.5.9-r1          apk                      
 libstdc++                                           15.2.0-r5         apk                      
 libunistring                                        1.4.2-r0          apk                      
 liftoff                                             3.1.0             npm                      
